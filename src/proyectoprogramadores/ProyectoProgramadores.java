@@ -76,5 +76,5 @@ public class ProyectoProgramadores {
             System.out.println("Ingresaste un valor incorrecto");
         }
         System.out.println("El costo de una " + tipo + " es de $" + precio + " " + moneda + " y tardaría " + tiempo + " meses.");
-    }
+    } //comentario
 }
