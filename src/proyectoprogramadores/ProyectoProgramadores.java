@@ -24,6 +24,36 @@ public class ProyectoProgramadores {
         System.out.println("4. multiplataforma");
         eleccion = entrada.nextInt();
         if (eleccion == 1) {
+            System.out.println("Escoger el tipo de sistema de operativo : ");
+
+            System.out.println("1. Windows");
+            System.out.println("2. Mac");
+            System.out.println("3. Linux");
+            System.out.println("4. Desarrollo multisistema");
+
+            eleccion = entrada.nextInt();
+            switch (eleccion) {
+                case 1:
+                    precio = base + 1000000;
+                    tiempo = 4;
+                    tipo = "aplicación para Windows";
+                    break;
+                case 2:
+                    precio = base + 1000000;
+                    tiempo = 4;
+                    tipo = "aplicación para Mac";
+                    break;
+                case 3:
+                    precio = base + 1500000;
+                    tiempo = 4;
+                    tipo = "aplicación para Linux";
+                    break;
+                case 4:
+                    precio = base + 3000000;
+                    tiempo = 4;
+                    tipo = "aplicación multisistema";
+                    break;
+            }
 
         } else if (eleccion == 3) { //inicio de la condicion de paginas web
             precio = base + 1000000 + 250000 + 42000;
