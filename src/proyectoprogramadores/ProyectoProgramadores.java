@@ -16,7 +16,7 @@ public class ProyectoProgramadores {
         System.out.println("3. Desarrollo web");
         System.out.println("4. multiplataforma");
         eleccion = entrada.nextInt();
-        if (eleccion == 1) {
+        if (eleccion == 1) { //inicio de condicion escritorio
             System.out.println("Escoger el tipo de sistema de operativo : ");
 
             System.out.println("1. Windows");
