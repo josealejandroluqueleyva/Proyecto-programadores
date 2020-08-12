@@ -17,21 +17,51 @@ public class ProyectoProgramadores {
         String tipo = "";
 
         System.out.println("Bienvenido programador");
-        System.out.println("¿Qué tipo de aplicación vas a desarrollar?");
+        System.out.println("¿Qué tipo de aplicación vas a desarrollar? Porfavor escoger el número correspondiente: ");
         System.out.println("1. App de escritorio");
         System.out.println("2. App movil");
         System.out.println("3. Desarrollo web");
-        System.out.println("4. multiplataforma");
+        System.out.println("4. Multiplataforma");
         eleccion = entrada.nextInt();
         if (eleccion == 1) {
+            System.out.println("Escoger el tipo de sistema de operativo : ");
+
+            System.out.println("1. Windows");
+            System.out.println("2. Mac");
+            System.out.println("3. Linux");
+            System.out.println("4. Desarrollo multisistema");
+
+            eleccion = entrada.nextInt();
+            switch (eleccion) {
+                case 1:
+                    precio = base + 1000000;
+                    tiempo = 4;
+                    tipo = "aplicación para Windows";
+                    break;
+                case 2:
+                    precio = base + 1000000;
+                    tiempo = 4;
+                    tipo = "aplicación para Mac";
+                    break;
+                case 3:
+                    precio = base + 1500000;
+                    tiempo = 4;
+                    tipo = "aplicación para Linux";
+                    break;
+                case 4:
+                    precio = base + 3000000;
+                    tiempo = 4;
+                    tipo = "aplicación multisistema";
+                    break;
+            }
 
         } else if (eleccion == 3) { //inicio de la condicion de paginas web
             precio = base + 1000000 + 250000 + 42000;
             tiempo = 4;
             tipo = "pagina web";
-            
+
         } else if (eleccion == 4) { //inicio de la condicion de app multiplataforma
-            precio = base + 5000000;
+            precio = base + 3000000;
             tiempo = 6;
             tipo = "aplicación multiplataforma";
         }
@@ -44,10 +74,10 @@ public class ProyectoProgramadores {
             precio = precio;
             moneda = "pesos";
         } else if (eleccion == 2) {
-            precio = precio/3772; //conversion a dolares
+            precio = precio / 3772; //conversion a dolares
             moneda = "dolares";
         } else if (eleccion == 3) {
-            precio = precio/4428; //conversion a euros
+            precio = precio / 4428; //conversion a euros
             moneda = "euros";
         } else {
             System.out.println("Ingresaste un valor incorrecto");
